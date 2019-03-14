@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlWork1.DivisionCriteriaPage"
+             Title="Делимость">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            
+            <Label Text="Введите делимое"/>
+            <Entry Placeholder="" x:Name="TextBox1" Keyboard="Numeric"/>
+            <Label Text="Введите делитель" />
+            <Entry Placeholder="" x:Name="TextBox2" Keyboard="Numeric"/>
+            <Button Text="Метод Рачинского 1" Clicked="Ar1Clicked"/>
+            <Button Text="Метод Рачинского 2" Clicked="Ar2Clicked"/>
+            <Button Text="Метод Рачинского 3" Clicked="Ar3Clicked"/>
+            <Button Text="Метод Паскаля" Clicked="PascalClicked" />
+            <Button Text="Безымянный метод" Clicked="UnnamedClicked" />
+            <Label Text="Ответ" x:Name="Result"/>
+            <Label Text="Решение" x:Name="Solution"/>
+            
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

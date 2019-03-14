@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlWork1.MultiplicationPage"
+             Title="Умножение">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Введите первый множитель" />
+                <Entry Placeholder="" x:Name="TextBox1" Keyboard="Numeric"/>
+                <Label Text="Введите второй множитель" />
+                <Entry Placeholder="" x:Name="TextBox2" Keyboard="Numeric"/>
+                <Button Text="Лента Фурье" Clicked="FourieClicked"/>
+                <Button Text="Сокращённое умножение" Clicked="ShortClicked" />
+                <Button Text="Русский метод" Clicked="RussianClicked" />
+                <Button Text="Метод Карацубы" Clicked="KarazubaClicked" />
+                <Label Text="Ответ" x:Name="Result"/>
+                <Label Text="Решение" x:Name="Solution" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

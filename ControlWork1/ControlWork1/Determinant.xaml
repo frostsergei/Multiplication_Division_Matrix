@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlWork1.Determinant"
+             Title="Определитель">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="1" x:Name="NumberLabel"/>
+                <Stepper Minimum="1" Maximum="10" Increment="1" Value="1" x:Name="NumberStepper" ValueChanged="StepperValChanged"/>
+                <Grid x:Name="MatrixField">
+                    
+                </Grid>
+                <Button Text="Найти определитель" Clicked="DeterminantClicked"/>
+                <Label Text="Ответ" x:Name="Result"/>
+                <Label Text="Решение" x:Name="Solution"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
