@@ -36,7 +36,7 @@ namespace ControlWork1
             log += movement + "A=" + a + "*10^" + length + "+" + b + "\n";
             log += movement + "B=" + c + "*10^" + length + "+" + d + "\n";
 
-            log += movement + "=" + b + "*" + d + "+((" + "(" + a + "*" + b + ")(" + c + "*" + d + ")" + "-" + a + "*" + c + "-" + b + "*" + d + ")*10^" + length + ")+" + a + "*" + c + "*10^" + 2 * length + "\n";
+            log += movement + "=" + b + "*" + d + "+((" + "(" + a + "+" + b + ")(" + c + "+" + d + ")" + "-" + a + "*" + c + "-" + b + "*" + d + ")*10^" + length + ")+" + a + "*" + c + "*10^" + 2 * length + "\n";
 
             ulong ac = KarazubaMultiplication((ulong)a, (ulong)c, ref log, step + 1);
             ulong bd = KarazubaMultiplication((ulong)b, (ulong)d, ref log, step + 1);
